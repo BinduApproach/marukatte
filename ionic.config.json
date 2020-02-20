@@ -1,0 +1,7 @@
+{
+  "name": "marukatte",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
