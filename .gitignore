@@ -19,7 +19,6 @@ npm-debug.log*
 
 /.idea
 /.firebase
-/src/environments
 /.ionic
 /.sass-cache
 /.sourcemaps
@@ -31,3 +30,4 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+/src/environments
