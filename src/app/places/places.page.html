@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-grid class="ion-no-padding" *ngIf="authService.userData as user">
+    <ion-row>
+      <ion-col no-padding>
+        <ion-img *ngIf="user.photoURL" [src]="user.photoURL"></ion-img>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <h3>{{ user.displayName }}</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="ion-padding ion-text-right">
+        <p>email: {{ user.email }}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
